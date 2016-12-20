@@ -1,0 +1,15 @@
+img {
+	position: absolute;
+	left: 45%;
+	top: 55px;
+}
+#hat {
+	top: 0px;
+	left: 43%;
+	z-index: 1;
+}
+#glasses {
+	top: 155px;
+	z-index: 2;
+	left: 48%;
+	}
