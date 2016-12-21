@@ -2,6 +2,14 @@
 	font-size: 0.8em;
 }
 
+#contact-info:hover{
+	font-size: 1em;
+}
+
+section>p {
+	font-family: Impact;
+}
+
 .job {
 	background-color: #e9e5dc;
 	border-radius: 5px;
