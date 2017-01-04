@@ -1,0 +1,34 @@
+Decide which floor number you are going to travel to.
+
+Approach the elevator.
+
+If you are going up, press the button with the "^" arrow.
+Otherwise press the "v" arrow.
+
+Wait for the elevator to arrive.  When the doors open, walk in to it.
+
+Press the button with the number of the floor you want to travel to on it.  The button will light up when you press it.
+
+Wait for the doors to close.  The elevator will begin traveling.  When it reaches your floor, the light on your button will go out.  When the light goes out, leave the elevator.
+---------------------------------------------------------------------------------------------
+MAKING COFFEE WITH AN ESPRESSO MAKER
+
+Consider the espresso maker - a bottom section, a coffee plug with a lid, and a top section also with a lid.
+
+Consider also, the coffee grounds, the stove and the coffee cup.
+
+Fill the bottom section of the espresso maker with cold water, 3/4 of the way.
+
+Fill the coffee plug with coffee grounds, half way, and cover it with its lid.
+
+Fit the coffee plug into the bottom section, and screw on the top section.
+
+Cover the top section with its lid.
+
+Place the espresso maker on the stove and turn the burner on to HIGH.
+
+Wait for the coffee to boil (you will be able to hear it!)
+
+Remove the espresso maker from the stove (don't burn yourself) and turn off the burner.
+
+Pour the coffee in to the coffee cup, and let it cool for 10 minutes.
