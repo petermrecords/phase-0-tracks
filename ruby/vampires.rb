@@ -1,11 +1,11 @@
 puts 'How many employees are we testing?'
+employees = gets.chomp
 begin
-	employees = gets.chomp
 	employees = employees.to_i
 rescue
-	puts 'I didn\'t catch that.  Can you give me a number please?  How many employees?'
-	retry
+	puts
 end
+
 
 employees.times do |time|
 
@@ -13,12 +13,8 @@ employees.times do |time|
 	your_name = gets.chomp
 
 	puts 'How old are you?'
-	begin
 		your_age = gets.chomp
-		your_age = your_age.to_i
-	rescue
-		puts 'I didn\'t catch that.  Can you give me a number please?  How old are you?'
-		retry
+		your_age.to_i
 	end
 
 	puts 'What year were you born?'
