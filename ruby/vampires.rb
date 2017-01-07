@@ -1,35 +1,37 @@
+# number of employees
+
 puts 'How many employees are we testing?'
-begin
+employees = gets.chomp
+employees = employees.to_i
+until employees > 0
+	puts 'I didn\'t catch that.  Can you give me a number please?  How many employees?'
 	employees = gets.chomp
 	employees = employees.to_i
-rescue
-	puts 'I didn\'t catch that.  Can you give me a number please?  How many employees?'
-	retry
 end
 
 employees.times do |time|
-
+	# name
 	puts 'What is your name?'
 	your_name = gets.chomp
-
+	# age
 	puts 'How old are you?'
-	begin
+	your_age = gets.chomp
+	your_age = your_age.to_i
+	until your_age > 0
+		puts 'I didn\'t catch that.  Can you give me a number please?  How old are you?'
 		your_age = gets.chomp
 		your_age = your_age.to_i
-	rescue
-		puts 'I didn\'t catch that.  Can you give me a number please?  How old are you?'
-		retry
 	end
-
+	# birth year
 	puts 'What year were you born?'
-	begin
+	birth_year = gets.chomp
+	birth_year = birth_year.to_i
+	until birth_year > 0
+		puts 'I didn\'t catch that.  Can you give me a number please?  What year were you born?'
 		birth_year = gets.chomp
 		birth_year = birth_year.to_i
-	rescue
-		puts 'I didn\'t catch that.  Can you give me a number please?  What year were you born?'
-		retry
 	end
-
+	# garlic bread
 	puts 'Our company cafeteria serves garlic bread.  Should we order some for you?'
 	garlic_bread = gets.chomp
 	until (garlic_bread.is_a?(TrueClass) || garlic_bread.is_a?(FalseClass))
@@ -43,7 +45,7 @@ employees.times do |time|
 				garlic_bread = gets.chomp
 		end
 	end
-
+	# health insurance
 	puts 'Would you like to enroll in the company\'s health insurance?'
 	health_insurance = gets.chomp
 	until (health_insurance.is_a?(TrueClass) || health_insurance.is_a?(FalseClass))
@@ -57,14 +59,14 @@ employees.times do |time|
 				health_insurance = gets.chomp
 		end
 	end
-
+	# allergies
 	puts 'Do you have any allergies?  Type "done" when you are finished listing them.'
 	allergies = gets.chomp
 	until allergies.downcase == 'sunshine' || allergies.downcase == 'done'
 		puts 'Anotha one?'
 		allergies = gets.chomp
 	end
-	
+	# decide the results
 	if allergies == 'sunshine'
 		result = 'Probably a vampire.'
 	else
@@ -88,7 +90,7 @@ employees.times do |time|
 			result = 'Definitely a vampire.'
 		end
 	end
-
+	
 	puts result
 end
 
