@@ -47,8 +47,7 @@ def decrypt(string)
 		if string[counter] == 'a'
 			string[counter] = 'z'
 		elsif alphabet.include? string[counter]
-			decrypted = alphabet[alphabet.index(string[counter]) - 1]
-			string[counter] = alphabet[decrypted]
+			string[counter] = alphabet[alphabet.index(string[counter]) - 1]
 		end
 		counter += 1 
 	end
@@ -59,8 +58,6 @@ end
 puts "What would you like to encrypt?"
 input = gets.chomp
 
-encrypt = encrypt(input)
+# puts encrypt(input)
 
-puts encrypt
-
-puts decrypt(encrypt('swordfish'))
+puts decrypt(encrypt(input))
