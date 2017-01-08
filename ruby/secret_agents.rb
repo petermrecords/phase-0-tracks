@@ -26,3 +26,21 @@ DECRYPT
 -return the decrypted string
 
 =end
+
+def encrypt(string)
+	counter = 0
+	while counter < string.length
+		if string[counter].lower in 'abcdefghijklmnopqrstuvwxy'
+			string[counter] = string[time].next!
+		elsif string[counter] == 'z'
+			string[counter] = 'a'
+		end
+		counter += 1
+	end
+	return string
+end
+
+puts "What would you like to encrypt?"
+input = gets.chomp
+
+puts encrypt(input)
