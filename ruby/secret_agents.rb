@@ -25,6 +25,15 @@ DECRYPT
 	-add 1 to the counter
 -return the decrypted string
 
+TESTS
+
+puts "What would you like to encrypt?"
+input = gets.chomp
+
+puts encrypt(input)
+
+puts decrypt(encrypt(input))
+
 =end
 
 def encrypt(string)
@@ -54,10 +63,17 @@ def decrypt(string)
 	return string
 end
 
-
-puts "What would you like to encrypt?"
+puts 'Would you like to encrypt or decrypt a password?'
 input = gets.chomp
 
-# puts encrypt(input)
+if input == 'encrypt'
+	puts 'What is the password?'
+	password = gets.chomp
+	password = encrypt(password)
+elsif input = 'decrypt'
+	puts 'What is the password?'
+	password = gets.chomp
+	password = decrypt(password)
+end
 
-puts decrypt(encrypt(input))
+puts password
