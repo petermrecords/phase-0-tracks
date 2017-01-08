@@ -36,11 +36,15 @@ puts decrypt(encrypt(input))
 
 =end
 
+# encryption
+
 def encrypt(string)
 	counter = 0
 	while counter < string.length
+		# checks if the value of the letter is in the first 25 letters and switches for next letter
 		if 'abcdefghijklmnopqrstuvwxy'.include? string[counter]
 			string[counter] = string[counter].next!
+		# loop back to a if the letter is z, else do nothing
 		elsif string[counter] == 'z'
 			string[counter] = 'a'
 		end
@@ -48,6 +52,8 @@ def encrypt(string)
 	end
 	return string
 end
+
+# decryption method
 
 def decrypt(string)
 	counter = 0
@@ -62,6 +68,18 @@ def decrypt(string)
 	end
 	return string
 end
+
+=begin
+
+Passing a string literal inside the nested encrypt method will encrypt that string.
+Then it will pass its output (the encrypted string) to the decrypt, which reverses the process.
+Printing that output gives the original string.
+
+puts decrypt(encrypt('swordfish'))
+
+=end
+
+# interface
 
 puts 'Would you like to encrypt or decrypt a password?'
 input = gets.chomp
