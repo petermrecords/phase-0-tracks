@@ -40,7 +40,23 @@ def encrypt(string)
 	return string
 end
 
+def decrypt(string)
+	counter = 0
+	alphabet = 'bcdefghijklmnopqrstuvwxyz'
+	while counter < string.length
+		if alphabet.include? string[counter]
+			string[counter] = alphabet[alphabet.index(string[counter]) - 1]
+		elsif string[counter] == 'a'
+			string[counter] = 'z'
+		end
+	counter += 1
+	end
+	return string
+end
+
+
 puts "What would you like to encrypt?"
 input = gets.chomp
 
 puts encrypt(input)
+puts decrypt(encrypt(input))
