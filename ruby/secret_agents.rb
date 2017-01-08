@@ -30,8 +30,8 @@ DECRYPT
 def encrypt(string)
 	counter = 0
 	while counter < string.length
-		if string[counter].lower in 'abcdefghijklmnopqrstuvwxy'
-			string[counter] = string[time].next!
+		if 'abcdefghijklmnopqrstuvwxy'.include? string[counter]
+			string[counter] = string[counter].next!
 		elsif string[counter] == 'z'
 			string[counter] = 'a'
 		end
