@@ -43,11 +43,14 @@ end
 def decrypt(string)
 	counter = 0
 	alphabet = 'bcdefghijklmnopqrstuvwxyz'
+	decrypted = ''
 	while counter < string.length
 		if alphabet.include? string[counter]
-			string[counter] = alphabet[alphabet.index(string[counter]) - 1]
+			decrypted += alphabet[alphabet.index(string[counter]) - 1]
 		elsif string[counter] == 'a'
-			string[counter] = 'z'
+			decrypted += 'z'
+		else
+			decrypted += string[counter]
 		end
 	counter += 1
 	end
