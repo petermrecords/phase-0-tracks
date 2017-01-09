@@ -1,3 +1,26 @@
+=begin
+
+get the following inputs from user:
+	-name: string
+	-age: int > 0
+	-number of children: int >= 0
+	-decor theme: string
+	-budget: float
+	-more than 5 rooms to decorate: boolean
+
+write inputs to hash
+	-key: user input (converted to correct data type)
+
+print the hash
+
+ask user if they want to update a value
+	-if they answer none: dont do anything
+	-else: re-get the information for that key and update it to the new value
+	
+print the hash again to confirm the update
+
+=end
+
 # name
 def get_name
 	puts 'What is your name?'
@@ -44,7 +67,7 @@ def get_budget
 		if numbers && your_budget.count('.') <= 1
 			your_budget = your_budget.to_f
 		else
-			puts 'I didn\'t catch that.  Can you give me a number please?'
+			puts 'I didn\'t catch that.  Can you give me a number with 2 or fewer decimal places please?'
 			your_budget = gets.chomp
 		end
 	end
@@ -103,7 +126,7 @@ when :big_house
 	your_form[:big_house] = get_big_house
 else
 	if !(change == 'none')
-		puts 'Sorry, you messed that up!'
+		puts 'Sorry, you messed that up! No third chances in the cutthroat world of interior decorating.'
 	end
 end
 
