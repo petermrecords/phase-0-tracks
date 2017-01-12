@@ -25,7 +25,8 @@ def next_vowel(chars)
 		char = next_vowels[char] if next_vowels.keys.include?(char)
 		output << char
 	end
-	return output
+	
+	output
 end
 
 def next_consonant(chars)
@@ -42,7 +43,7 @@ def next_consonant(chars)
 		end
 	end
 
-	return chars
+	output
 end
 
 def create_alias(first_name, last_name)
@@ -56,10 +57,13 @@ def create_alias(first_name, last_name)
 		word.capitalize!
 		output << word
 	end
+	
 	output.join(' ')
 end
 
 puts 'Welcome to the alias manager.  Type "quit" at any time to quit.'
+aliases = []
+real_names = []
 loop do
 	puts 'What is your first name?'
 	first_name = gets.chomp.downcase
@@ -68,5 +72,10 @@ loop do
 	last_name = gets.chomp.downcase
 	break if last_name == 'quit'
 	your_alias = create_alias(first_name, last_name)
-	puts 'Your alias is ' << your_alias << '.'
+	real_names << (first_name.capitalize! << ' ' << last_name.capitalize!)
+	aliases << your_alias
+end
+
+aliases.length.times do |time|
+	puts aliases[time] << ' is actually ' << real_names[time] << '.'
 end
