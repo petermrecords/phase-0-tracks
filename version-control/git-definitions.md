@@ -17,3 +17,5 @@ A commit is a save point in git.  Changes to all files that have been staged (us
 * What is a merge conflict?
 
 A merge conflict occurs when two users make changes to the same line(s) of code.
+
+[Is there anybody out there?](https://www.youtube.com/watch?v=fNLhxKpfCnA)

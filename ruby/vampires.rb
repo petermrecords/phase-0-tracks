@@ -9,6 +9,7 @@ until employees > 0
 	employees = employees.to_i
 end
 
+
 employees.times do |time|
 	# name
 	puts 'What is your name?'
