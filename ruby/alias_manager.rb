@@ -20,26 +20,19 @@ def next_vowel(chars)
 		'o' => 'u',
 		'u' => 'a'
 	}
-	output = []
-	chars.each do |char|
-		char = next_vowels[char] if next_vowels.keys.include?(char)
-		output << char
-	end
+	
+	chars.map!{|char| next_vowels[char] if next_vowels.keys.include?(char)}
 	
 	output
 end
 
 def next_consonant(chars)
-	output = []
+	
 	chars.each do |char|
 		if !('aeiouzdhnt'.include?(char))
 			char.next!
-			output << char
 		elsif 'zdhnt'.include?(char)
 			char.next!.next!
-			output << char
-		else
-			output << char
 		end
 	end
 
