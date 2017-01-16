@@ -2,6 +2,7 @@
 	
 CLASS: Puppy
 ATTRIBUTES:
+	-Name
 	-Breed
 	-Weight (lbs)
 	-Age (months)
