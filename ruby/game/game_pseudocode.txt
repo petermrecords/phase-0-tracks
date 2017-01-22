@@ -1,0 +1,42 @@
+-Game class
+	ATTRIBUTES:
+	-hidden word
+	-players word (all blank to start with, correctly guessed letters appear as they are guessed)
+	-guessed letters
+	-rounds played (increments 1 each time)
+	-max rounds (related to the length of the hidden word - the lesser of 2 * length or 26)
+	-won (true, false or nil)
+	METHODS:
+	-initialize:
+		-input: a word.
+		-sets hidden word to an array of the characters in that word
+		-sets players word to an array of "_"s that many characters long
+		-sets rounds played to 0
+		-sets max rounds to the lesser of 2 * length or 26
+		-sets won to nil
+		-prints the players word (a bunch of blanks atm)
+	-check for win/loss:
+		-checks that players word is not = hidden word - if it is, they win set won to true
+		-checks that rounds played is less than max rounds - if not, they lose set won to false
+		-else does nothing
+	-guess:
+		-input: a character.
+			-checks the character is not in guessed letters
+			-if it is, warns user and exits without incrementing rounds played
+			if it is not:
+				-checks if the character is in the hidden word and where
+				-if it is not, warn the user they whiffed
+				-if it is, change players word at those indexes to the character
+				-print the players word
+				-increment rounds played by one
+
+-Driver code
+	Get first user input: the word to guess
+	Initialize the game with that word as input.
+	While won is not true or false:
+		-get second user input: a letter (take the first character of input)
+		-guess with that character
+		-check for win/loss
+	Print either a "You win" or "You lose" message as appropriate
+
+	
