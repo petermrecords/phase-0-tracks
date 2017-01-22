@@ -26,4 +26,9 @@ class Game
 		end
 		@player_word.join('')
 	end
+
+	def check_win
+		@won = true if @player_word == @hidden_word
+		@won = false if @rounds_played >= max_rounds
+	end
 end
