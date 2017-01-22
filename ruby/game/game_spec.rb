@@ -1,7 +1,7 @@
 require_relative "game"
 
 describe Game do
-	let(:game) { Game.new }
+	let(:game) { Game.new('the') }
 	# initialization
 	it "initializes with the first users word as the hidden word" do
 		expect(game.hidden_word).to eq ['t','h','e']
