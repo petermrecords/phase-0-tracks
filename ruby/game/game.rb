@@ -24,7 +24,7 @@ class Game
 			@guessed_letters << letter
 			@rounds_played += 1
 		end
-		@player_word.join('')
+		puts @player_word.join('')
 	end
 
 	def check_win
@@ -32,3 +32,19 @@ class Game
 		@won = false if @rounds_played >= max_rounds
 	end
 end
+
+puts "Welcome to hangman."
+puts "PLAYER 1: Enter the word to be guessed."
+word = gets.chomp.downcase
+game = Game.new(word)
+puts "PLAYER 2: Enter your guesses one at a time.  You have #{game.max_rounds} tries.  Repeated guesses don't count against you."
+puts "The word, with any characters you've guessed already revealed, will display after every round."
+loop do
+	break if game.won == true || game.won == false
+	puts "Enter your guess:"
+	letter = gets.chomp.downcase[0]
+	game.guess(letter)
+	game.check_win
+end
+puts "Congratulations!  You won bigly!" if game.won
+puts "You lose! SAD! A DISASTER!" if !game.won
