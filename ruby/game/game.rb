@@ -25,6 +25,7 @@ class Game
 			@rounds_played += 1
 		end
 		puts @player_word.join('')
+		puts "You have #{@max_rounds-@rounds_played} tries left."
 	end
 
 	def check_win
