@@ -11,6 +11,7 @@
 		-input: a word.
 		-sets hidden word to an array of the characters in that word
 		-sets players word to an array of "_"s that many characters long
+		-sets guessed letters to empty array
 		-sets rounds played to 0
 		-sets max rounds to the lesser of 2 * length or 26
 		-sets won to nil
@@ -27,8 +28,9 @@
 				-checks if the character is in the hidden word and where
 				-if it is not, warn the user they whiffed
 				-if it is, change players word at those indexes to the character
-				-print the players word
-				-increment rounds played by one
+				-add that character to guessed letters
+		-print the players word
+		-increment rounds played by one
 
 -Driver code
 	Get first user input: the word to guess
