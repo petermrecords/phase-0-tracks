@@ -97,7 +97,25 @@ california.virus_effects
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 alaska.virus_effects
 
-=end
-
 #=======================================================================
 # Reflection Section
+
+-What are the differences between the two different hash syntaxes shown in the state_data file?
+
+The main "states" hash is written longhand, whereas the "data" hashes use a shorthand for hashes with symbols as keys.
+
+-What does require_relative do? How is it different from require?
+
+require_relative allows you to run code in your file from a separate file in the same directory.  Require I think looks for gems in your library or follows the directory path given.
+
+-What are some ways to iterate through a hash?
+
+.each works for hashes as well as arrays.  Hashes can also use .keys.each to iterate through just the keys or .values.each to iterate through values.
+
+-When refactoring virus_effects, what stood out to you about the variables, if anything?
+
+The variables were named after the thing they were referencing in real life, which helped a lot to keep the semantics of the code straight while working.
+
+-What concept did you most solidify in this challenge?
+
+I was not very familiar with private class methods before this, and the explanation and example of when you would use them was very helpful.
