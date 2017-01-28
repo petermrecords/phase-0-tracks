@@ -9,3 +9,5 @@ function longest_phrase(phrases) {
 }
 
 console.log(longest_phrase(["long phrase","longest phrase","longer phrase"]));
+console.log(longest_phrase(["big", "bigger", "biggest"]));
+console.log(longest_phrase(["billions", "billions and billions"]));
