@@ -14,3 +14,12 @@ A VPS is access sold over the internet to a block of memory and computing power 
 
 This grants the most extensive rights possible to any applications that are run.  Most applications do not need them, and these privileges would allow the applications to destroy the entire system, erase files etc.  Running programs on user accounts limits potential damage to the areas of the system that user has access to.
 
+# RELEASE 2
+
+onload: I think this could be used to immediately trigger effects when the page loads.
+
+onshow: Similarly, if another event caused this to show after the page loads, this could be used to trigger more effects.
+
+onresize: Triggering effects when the element is resized could also be handy.
+
+onlostpointercapture & onloadedmetadata: not sure what these would do.
