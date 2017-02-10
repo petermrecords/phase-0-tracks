@@ -60,3 +60,9 @@ get '/great_job/:name' do
     "Great job!"
   end
 end
+
+# write a GET route that adds 2 numbers
+
+get '/add' do
+  "#{(params[:n1].to_i) + (params[:n2].to_i)}"
+end
