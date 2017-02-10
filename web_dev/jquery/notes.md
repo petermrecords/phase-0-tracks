@@ -15,6 +15,6 @@ Take a break before doing the project part of it - think of ideas etc but do som
 
 # POST STUDY NOTES
 
-I think doing the entire code academy course in one shot was a little too much without a break.  I finished it OK but I was getting a little burnt out by the end and don't think I got as much out of the later modules.
+I think doing the entire code academy course in one shot was a little too much without a break.  I finished it OK but I was getting a little burnt out by the end and don't think I got as much out of the later modules since I was just trying to push through.
 
 Reading the documentation a bit first was very helpful, the summaries etc gave me an idea of what to expect later without having to go into too much depth.
