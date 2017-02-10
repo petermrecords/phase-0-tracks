@@ -66,3 +66,14 @@ end
 get '/add' do
   "#{(params[:n1].to_i) + (params[:n2].to_i)}"
 end
+
+get '/campuses/:campus' do
+  students = db.execute("SELECT * FROM students WHERE campus = ?;",params[:campus])
+  response = ''
+  students.each do |student|
+    response << "ID: #{student['id']}<br>"
+    response << "Name: #{student['name']}<br>"
+    response << "Age: #{student['age']}<br><br>"
+  end
+  response
+end
