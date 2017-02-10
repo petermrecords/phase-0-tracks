@@ -1,0 +1,53 @@
+body {
+	background-color: black;
+}
+
+#container {
+	border: 1px solid white;
+	border-radius: 5px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#container div {
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	margin: 20px;
+	display: inline-block;
+}
+
+#red {
+	background-color: #c44442;
+}
+
+#orange {
+	background-color: #c47442;
+}
+
+#yellow {
+	background-color: #c4b742;
+}
+
+#green {
+	background-color: #67c442;
+}
+
+#blue {
+	background-color: #4296c4;
+}
+
+#purple {
+	background-color: #9442c4;
+}
+
+#white {
+	background-color: white;
+}
+
+h1 {
+	font-family: Courier;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+}
